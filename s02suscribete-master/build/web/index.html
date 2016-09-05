@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Suscribete - Plataforma Web</title>
+    <link rel="stylesheet" href="styles/newcss.css" type="text/css"/>
+</head>
+<body>
+   
+    
+    <form  action="emailList" method="post" class="form">
+         <h2>Suscribete a nuestro Sitio Web</h2>
+    
+        <p>Introduce tu nombre y tu email para suscribirte a 
+        nuestro sitio web y recibir notificaciones.</p>
+        <input type="hidden" name="action" value="add">          
+        <label class="pad_top">Nombre:</label>        
+        <input type="text" name="firstName" required><br>        
+        <label class="pad_top">Apellidos:</label>        
+        <input type="text" name="lastName" required><br>        
+        <label class="pad_top">Email:</label>        
+        <input type="email" name="email" required><br>
+        <br><B>Sexo:</B>
+        <label class="pad_top">Hombre</label> 
+        <input TYPE="radio" NAME="sexo" VALUE="Hombre">
+        <label class="pad_top">Mujer</label> 
+        <input TYPE="radio" NAME="sexo" VALUE="Mujer" >
+        <label>&nbsp;</label>        
+        <button type="submit" value="SUSCRIBIR" class="margin_left">Suscribir</button>       
+    </form>
+</body>
+</html>
